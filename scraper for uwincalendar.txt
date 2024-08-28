@@ -1,0 +1,52 @@
+// Include the xlsx library in your HTML or use in the console
+let script = document.createElement('script');
+script.src = "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js";
+document.head.appendChild(script);
+
+// Wait for the library to load
+script.onload = function() {
+    // Function to extract event data and generate Excel file
+    function extractEventData() {
+        // Get all event elements on the page
+        const eventElements = document.querySelectorAll('td.single-day');
+
+        // Prepare data for Excel
+        const eventData = [['Date', 'Event']];
+
+        eventElements.forEach(eventElement => {
+            const dateString = eventElement.getAttribute('data-date');
+            let eventTitle = '';
+
+            // Ensure the dateString is valid before converting
+            if (dateString && !isNaN(Date.parse(dateString))) {
+                const date = new Date(dateString);
+
+                // Adjust date to correct for any timezone issues
+                date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
+
+                // Extract event titles
+                const events = eventElement.querySelectorAll('.views-field-title a');
+                events.forEach(event => {
+                    eventTitle += (eventTitle ? ' | ' : '') + event.textContent.trim();
+                });
+
+                // Add to event data
+                eventData.push([date, eventTitle || 'No events']);
+            }
+        });
+
+        // Create worksheet and workbook
+        const worksheet = XLSX.utils.aoa_to_sheet(eventData);
+        const workbook = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(workbook, worksheet, "Events");
+
+        // Format date column in Excel
+        worksheet['!cols'] = [{ wch: 15, z: 'yyyy-mm-dd' }, { wch: 100 }];
+
+        // Download Excel file
+        XLSX.writeFile(workbook, "events.xlsx");
+    }
+
+    // Run the function to extract data and download Excel file
+    extractEventData();
+};

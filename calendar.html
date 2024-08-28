@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Calendar</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+  </head>
+  <body>
+    <!-- Your calendar HTML code goes here -->
+    <div class="row">
+      <div class="col-md-12 col-lg-12 uw-content-area">
+        <h1 class="page-header">Event Calendar</h1>
+        <div class="region region-content">
+          <div class="block block-system block-no-title">
+            <div class="view view-events-calendar">
+              <div class="view-content">
+                <div class="calendar-calendar">
+                  <div class="month-view">
+                    <table class="full">
+                      <tbody>
+                        <!-- Dates from July 28 to August 31 -->
+                        <tr class="date-box">
+                          <td
+                            id="events_calendar-2024-07-28-date-box"
+                            class="date-box past empty"
+                            data-date="2024-07-28"
+                          >
+                            <div class="inner">
+                              <div class="month day">28</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-07-29-date-box"
+                            class="date-box past empty"
+                            data-date="2024-07-29"
+                          >
+                            <div class="inner">
+                              <div class="month day">29</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-07-30-date-box"
+                            class="date-box past empty"
+                            data-date="2024-07-30"
+                          >
+                            <div class="inner">
+                              <div class="month day">30</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-07-31-date-box"
+                            class="date-box past empty"
+                            data-date="2024-07-31"
+                          >
+                            <div class="inner">
+                              <div class="month day">31</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-01-date-box"
+                            class="date-box past"
+                            data-date="2024-08-01"
+                          >
+                            <div class="inner">
+                              <div class="month day">1</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-02-date-box"
+                            class="date-box past"
+                            data-date="2024-08-02"
+                          >
+                            <div class="inner">
+                              <div class="month day">2</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-03-date-box"
+                            class="date-box past"
+                            data-date="2024-08-03"
+                          >
+                            <div class="inner">
+                              <div class="month day">3</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="single-day">
+                          <td
+                            id="events_calendar-2024-07-28-0"
+                            class="single-day past empty"
+                            data-date="2024-07-28"
+                          >
+                            <div class="inner">
+                              <div class="calendar-empty">&nbsp;</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-07-29-0"
+                            class="single-day past empty"
+                            data-date="2024-07-29"
+                          >
+                            <div class="inner">
+                              <div class="calendar-empty">&nbsp;</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-07-30-0"
+                            class="single-day past empty"
+                            data-date="2024-07-30"
+                          >
+                            <div class="inner">
+                              <div class="calendar-empty">&nbsp;</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-07-31-0"
+                            class="single-day past empty"
+                            data-date="2024-07-31"
+                          >
+                            <div class="inner">
+                              <div class="calendar-empty">&nbsp;</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-01-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-01"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-02-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-02"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-03-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-03"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                        </tr>
+                        <tr class="date-box">
+                          <td
+                            id="events_calendar-2024-08-04-date-box"
+                            class="date-box past"
+                            data-date="2024-08-04"
+                          >
+                            <div class="inner">
+                              <div class="month day">4</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-05-date-box"
+                            class="date-box past"
+                            data-date="2024-08-05"
+                          >
+                            <div class="inner">
+                              <div class="month day">5</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-06-date-box"
+                            class="date-box past"
+                            data-date="2024-08-06"
+                          >
+                            <div class="inner">
+                              <div class="month day">6</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-07-date-box"
+                            class="date-box past"
+                            data-date="2024-08-07"
+                          >
+                            <div class="inner">
+                              <div class="month day">7</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-08-date-box"
+                            class="date-box past"
+                            data-date="2024-08-08"
+                          >
+                            <div class="inner">
+                              <div class="month day">8</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-09-date-box"
+                            class="date-box past"
+                            data-date="2024-08-09"
+                          >
+                            <div class="inner">
+                              <div class="month day">9</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-10-date-box"
+                            class="date-box past"
+                            data-date="2024-08-10"
+                          >
+                            <div class="inner">
+                              <div class="month day">10</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="single-day">
+                          <td
+                            id="events_calendar-2024-08-04-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-04"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-05-0"
+                            class="single-day past"
+                            data-date="2024-08-05"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3640-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3640/civic-holiday-university-closed"
+                                            >Civic Holiday: University Closed</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-06-0"
+                            class="single-day past"
+                            data-date="2024-08-06"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3645-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3645/last-day-summer-session-2024-6-week-classes"
+                                            >Last Day of Summer Session 2024 (6
+                                            week) Classes</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3647-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3647/make-date-monday-july-1-classes"
+                                            >Make up date for Canada Day (July
+                                            1) Classes</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-07-0"
+                            class="single-day past"
+                            data-date="2024-08-07"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3644-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3644/last-day-full-summer-2024-12-week-classes"
+                                            >Last Day of Full Summer 2024 (12
+                                            week) Classes</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3646-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3646/make-date-monday-may-20-classes"
+                                            >Make up date for Victoria Day
+                                            Holiday (May 20)...</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-08-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-08"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-09-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-09"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-10-0"
+                            class="single-day past"
+                            data-date="2024-08-10"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3649-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3649/final-exams-full-summer-2024-12-week-and-summer-6-week-session-aug-12-21"
+                                            >Final Exams for Full Summer 2024
+                                            (12 week) and Summer (6 week)
+                                            Session (Aug 10-19)</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="date-box">
+                          <td
+                            id="events_calendar-2024-08-11-date-box"
+                            class="date-box past"
+                            data-date="2024-08-11"
+                          >
+                            <div class="inner">
+                              <div class="month day">11</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-12-date-box"
+                            class="date-box past"
+                            data-date="2024-08-12"
+                          >
+                            <div class="inner">
+                              <div class="month day">12</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-13-date-box"
+                            class="date-box past"
+                            data-date="2024-08-13"
+                          >
+                            <div class="inner">
+                              <div class="month day">13</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-14-date-box"
+                            class="date-box past"
+                            data-date="2024-08-14"
+                          >
+                            <div class="inner">
+                              <div class="month day">14</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-15-date-box"
+                            class="date-box past"
+                            data-date="2024-08-15"
+                          >
+                            <div class="inner">
+                              <div class="month day">15</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-16-date-box"
+                            class="date-box past"
+                            data-date="2024-08-16"
+                          >
+                            <div class="inner">
+                              <div class="month day">16</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-17-date-box"
+                            class="date-box past"
+                            data-date="2024-08-17"
+                          >
+                            <div class="inner">
+                              <div class="month day">17</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="single-day">
+                          <td
+                            id="events_calendar-2024-08-11-0"
+                            class="single-day past"
+                            data-date="2024-08-11"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3649-field_event_date-0.1 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3649/final-exams-full-summer-2024-12-week-and-summer-6-week-session-aug-12-21"
+                                            >Final Exams for Full Summer 2024
+                                            (12 week) and Summer (6 week)
+                                            Session (Aug 10-19)</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-12-0"
+                            class="single-day past"
+                            data-date="2024-08-12"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3649-field_event_date-0.2 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3649/final-exams-full-summer-2024-12-week-and-summer-6-week-session-aug-12-21"
+                                            >Final Exams for Full Summer 2024
+                                            (12 week) and Summer (6 week)
+                                            Session (Aug 10-19)</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3973-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3973/grad-deadline-submitting-copy-phd-dissertation"
+                                            >GRAD: Deadline for submitting a
+                                            copy of the PhD dissertation...</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-13-0"
+                            class="single-day past"
+                            data-date="2024-08-13"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3649-field_event_date-0.3 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3649/final-exams-full-summer-2024-12-week-and-summer-6-week-session-aug-12-21"
+                                            >Final Exams for Full Summer 2024
+                                            (12 week) and Summer (6 week)
+                                            Session (Aug 10-19)</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-14-0"
+                            class="single-day past"
+                            data-date="2024-08-14"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3649-field_event_date-0.4 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3649/final-exams-full-summer-2024-12-week-and-summer-6-week-session-aug-12-21"
+                                            >Final Exams for Full Summer 2024
+                                            (12 week) and Summer (6 week)
+                                            Session (Aug 10-19)</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-15-0"
+                            class="single-day past"
+                            data-date="2024-08-15"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3649-field_event_date-0.5 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3649/final-exams-full-summer-2024-12-week-and-summer-6-week-session-aug-12-21"
+                                            >Final Exams for Full Summer 2024
+                                            (12 week) and Summer (6 week)
+                                            Session (Aug 10-19)</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3944-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3944/fees-due-fall-2024"
+                                            >Fees Due: Fall 2024...</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-16-0"
+                            class="single-day past"
+                            data-date="2024-08-16"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3649-field_event_date-0.6 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3649/final-exams-full-summer-2024-12-week-and-summer-6-week-session-aug-12-21"
+                                            >Final Exams for Full Summer 2024
+                                            (12 week) and Summer (6 week)
+                                            Session (Aug 10-19)</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-17-0"
+                            class="single-day past"
+                            data-date="2024-08-17"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3649-field_event_date-0.7 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3649/final-exams-full-summer-2024-12-week-and-summer-6-week-session-aug-12-21"
+                                            >Final Exams for Full Summer 2024
+                                            (12 week) and Summer (6 week)
+                                            Session (Aug 10-19)</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="date-box">
+                          <td
+                            id="events_calendar-2024-08-18-date-box"
+                            class="date-box past"
+                            data-date="2024-08-18"
+                          >
+                            <div class="inner">
+                              <div class="month day">18</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-19-date-box"
+                            class="date-box past"
+                            data-date="2024-08-19"
+                          >
+                            <div class="inner">
+                              <div class="month day">19</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-20-date-box"
+                            class="date-box past"
+                            data-date="2024-08-20"
+                          >
+                            <div class="inner">
+                              <div class="month day">20</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-21-date-box"
+                            class="date-box past"
+                            data-date="2024-08-21"
+                          >
+                            <div class="inner">
+                              <div class="month day">21</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-22-date-box"
+                            class="date-box past"
+                            data-date="2024-08-22"
+                          >
+                            <div class="inner">
+                              <div class="month day">22</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-23-date-box"
+                            class="date-box past"
+                            data-date="2024-08-23"
+                          >
+                            <div class="inner">
+                              <div class="month day">23</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-24-date-box"
+                            class="date-box past"
+                            data-date="2024-08-24"
+                          >
+                            <div class="inner">
+                              <div class="month day">24</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="single-day">
+                          <td
+                            id="events_calendar-2024-08-18-0"
+                            class="single-day past"
+                            data-date="2024-08-18"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3649-field_event_date-0.8 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3649/final-exams-full-summer-2024-12-week-and-summer-6-week-session-aug-12-21"
+                                            >Final Exams for Full Summer 2024
+                                            (12 week) and Summer (6 week)
+                                            Session (Aug 10-19)</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3965-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3965/no-fee-deadline-apply-graduate-fall-2024-convocation"
+                                            >No Fee Deadline to Apply to
+                                            Graduate at Fall 2024
+                                            Convocation...</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-19-0"
+                            class="single-day past"
+                            data-date="2024-08-19"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3649-field_event_date-0.9 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3649/final-exams-full-summer-2024-12-week-and-summer-6-week-session-aug-12-21"
+                                            >Final Exams for Full Summer 2024
+                                            (12 week) and Summer (6 week)
+                                            Session (Aug 10-19)</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3966-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3966/late-fee-begins-apply-graduate-fall-2024-convocation"
+                                            >Late Fee Begins to Apply to
+                                            Graduate at Fall 2024
+                                            Convocation...</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-20-0"
+                            class="single-day past"
+                            data-date="2024-08-20"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3982-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3982/alternate-final-exam-day"
+                                            >Alternate Final Exam Day</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-21-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-21"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-22-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-22"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-23-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-23"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-24-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-24"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                        </tr>
+                        <tr class="date-box">
+                          <td
+                            id="events_calendar-2024-08-25-date-box"
+                            class="date-box past"
+                            data-date="2024-08-25"
+                          >
+                            <div class="inner">
+                              <div class="month day">25</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-26-date-box"
+                            class="date-box past"
+                            data-date="2024-08-26"
+                          >
+                            <div class="inner">
+                              <div class="month day">26</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-27-date-box"
+                            class="date-box past"
+                            data-date="2024-08-27"
+                          >
+                            <div class="inner">
+                              <div class="month day">27</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-28-date-box"
+                            class="date-box today"
+                            data-date="2024-08-28"
+                          >
+                            <div class="inner">
+                              <div class="month day">28</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-29-date-box"
+                            class="date-box future"
+                            data-date="2024-08-29"
+                          >
+                            <div class="inner">
+                              <div class="month day">29</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-30-date-box"
+                            class="date-box future"
+                            data-date="2024-08-30"
+                          >
+                            <div class="inner">
+                              <div class="month day">30</div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-31-date-box"
+                            class="date-box future"
+                            data-date="2024-08-31"
+                          >
+                            <div class="inner">
+                              <div class="month day">31</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="single-day">
+                          <td
+                            id="events_calendar-2024-08-25-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-25"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-26-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-26"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-27-0"
+                            class="single-day no-entry past"
+                            data-date="2024-08-27"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-28-0"
+                            class="single-day today"
+                            data-date="2024-08-28"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3946-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3946/nursing-clinical-education-forum"
+                                            >Nursing- Clinical Education
+                                            Forum</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-29-0"
+                            class="single-day future"
+                            data-date="2024-08-29"
+                          >
+                            <div class="inner">
+                              <div class="item">
+                                <div
+                                  class="view-item view-item-events_calendar"
+                                >
+                                  <div class="calendar monthview">
+                                    <div
+                                      class="calendar-3947-field_event_date-0.0 contents"
+                                    >
+                                      <div
+                                        class="views-field views-field-title"
+                                      >
+                                        <span class="field-content"
+                                          ><a
+                                            href="/registrar/3947/nursing-year-3-transitions-presentation"
+                                            >Nursing Year 3: Transitions
+                                            presentation</a
+                                          ></span
+                                        >
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-30-0"
+                            class="single-day no-entry future"
+                            data-date="2024-08-30"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                          <td
+                            id="events_calendar-2024-08-31-0"
+                            class="single-day no-entry future"
+                            data-date="2024-08-31"
+                          >
+                            <div class="inner">&nbsp;</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Ensure the XLSX library is available
+        if (typeof XLSX === "undefined") {
+          console.error("XLSX library is not loaded.");
+          return;
+        }
+
+        // Function to extract event data and generate Excel file
+        function extractEventData() {
+          // Get all single-day date boxes
+          const dateBoxes = document.querySelectorAll("td.single-day");
+
+          // Prepare data for Excel
+          const eventData = [["Date", "Event"]];
+          const dateEventMap = new Map();
+
+          dateBoxes.forEach((box) => {
+            const dateString = box.getAttribute("data-date");
+            let eventTitles = "";
+
+            // Convert date string to a JavaScript Date object
+            const date = new Date(dateString);
+
+            // Find all event titles within this box and concatenate them
+            const events = box.querySelectorAll(".views-field-title a");
+            events.forEach((event) => {
+              eventTitles +=
+                (eventTitles ? " | " : "") + event.textContent.trim();
+            });
+
+            // Store the concatenated event titles associated with this date
+            dateEventMap.set(date, eventTitles || "No events");
+          });
+
+          // Convert the map to an array for Excel
+          dateEventMap.forEach((events, date) => {
+            eventData.push([date, events]);
+          });
+
+          // Create a worksheet
+          const worksheet = XLSX.utils.aoa_to_sheet(eventData);
+
+          // Set date formatting for the first column (date column)
+          eventData.forEach((row, index) => {
+            if (index > 0) {
+              const cellAddress = XLSX.utils.encode_cell({ c: 0, r: index });
+              if (!worksheet[cellAddress].z) {
+                worksheet[cellAddress].z = "yyyy-mm-dd";
+              }
+            }
+          });
+
+          // Create a new workbook
+          const workbook = XLSX.utils.book_new();
+          XLSX.utils.book_append_sheet(workbook, worksheet, "Events");
+
+          // Generate Excel file and trigger download
+          XLSX.writeFile(workbook, "events.xlsx");
+        }
+
+        // Call the function to extract data and download Excel file
+        extractEventData();
+      });
+    </script>
+  </body>
+</html>
